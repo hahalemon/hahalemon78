@@ -1,94 +1,137 @@
-body {
-	background-color: #EEEEEE;
-	width: 1080px;
-	margin: auto;
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+
+.month {
+    padding: 25px 25px;
+    width: 100%;
+    background: #1abc9c;
+    text-align: center;
+    color: white;
+    font-size: 20px;
 }
 
 
-header {
-	background-color: #61503b;
-	width:1068px;
-	padding: 5px;
-	margin: 0px;
-}	
-header h1 {
-	font: bold 16px/20px Arial, sans-serif;
-	margin: 0px;
-	padding: 5px;
-	display: inline;
-	border-right: 1px dotted white;
-	color:white;
-}
-header h2 {
-	font: 15px/20px  Arial, sans-serif;
-	margin: 0px;
-	padding: 5px;
-	display: inline;
-	border-right: 1px dotted white;
-	color:white;
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
 }
 
-a {
-	text-decoration: none;
-	color: white;
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #572;
+    text-align: center;
 }
 
-a:hover{
-	color: #b3a973;
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+
 }
 
-header h3 {
-	font: 14px/20px  Arial, sans-serif;
-	margin: 0px;
-	padding: 5px;
-	display: inline;
-	color:white;
-}
-article {
-	background-image: url("../img/rock2bgrnd.jpg");
-	background-repeat: no-repeat;
-	background-size: 100%;
-	margin: 0px;
-	padding: 0px;
-	width: 1080px;
-	height: 540px;
-}
-article h1 {
-	font: bold italic 16px/20px Arial, sans-serif;
-	padding: 5px;
-	color: #ffffff;
-	background-color: rgba(191,155,115, .5);
-}
-img {
-	display: block;
-	float: left;
-	margin: 25px 10px 50px 80px;
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+	
 }
 
+.days li .active {
+    padding: 5px;
+	background: #1abc9c;
+    color: white !important
+}
 
-img:hover {
-	transform: rotate(-20deg)
+a:hover { 
+    background-color: yellow;
 }
-.quote {
-	float: left;
-	width: 515px;
-	margin: 25px 0px 0px 0px;
-	padding: 5px 5px 5px 5px;
-	background-color: #b3a973;
-	opacity:.8;
+
+a:link {text-decoration:  none;
+  
 }
-.quote p {
-	font: normal 32px/35px Georgia, serif;
-	margin: 0px 5px 5px 5px;
-	color: #FAF5EE;
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
 }
-.quote #name {
-	font: italic 18px/30px Georgia, serif;
-	text-align: right;
-	margin-right: 25px;
-	color: #FAF5EE;
+
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
 }
-hr {
-	clear: both;
-	border: 5px solid rgba(191,155,115,.5);
+
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
 }
+</style>
+</head>
+<body>
+
+<h1>start of break from Miami</h1>
+
+<div class="month">      
+      <span> Dec 2019</span>
+</div>
+
+<ul class="weekdays">
+  <li>Su</li>  
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+</ul>
+
+<ul class="days">  
+  <li> </li>
+  <li> </li>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li> 8 </li>
+  <li>9</li>
+  <li>10</li>
+  <li>11</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li><mark><span class="active"><a href=" https://www.hellofresh.com/landing/holidays"</span> 28</a></mark></li>
+    <li><mark>29</mark></li>
+    <li><mark>30</mark></li>
+    <li><mark>31</mark></li>
+</ul>
+
+</body>
+</html>
