@@ -8,7 +8,6 @@
 ul {list-style-type: none;}
 body {font-family: Verdana, sans-serif;}
 
-
 .month {
     padding: 25px 25px;
     width: 100%;
